@@ -1,0 +1,48 @@
+
+<div class="customer-container" *ngIf="hideTable">
+    <h1>Customer Details</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <td >ID</td>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Address</td>
+                <td>Phone No.</td>
+                <td>No. of Accounts</td>
+                <td>Balance</td>
+                <td>Accounts Opened</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customerArray">
+                <!-- <td>12345</td>
+                <td>shwetha</td>
+                <td>f</td>
+                <td>mangalore</td>
+                <td>999999999</td>
+                <td>29377374 </td>
+                <td>50000</td>
+                <td><a routerLink ='/customers/account'>ACCOUNT 1</a><br><a routerLink ='customers/account'>ACCOUNT 2</a></td>
+            </tr>
+            <tr> -->
+                <td>{{customer._id}}</td>
+                <td>{{customer.name}}</td>
+                <td>{{customer.gender}}</td>
+                <td>{{customer.address}}</td>
+                <td>{{customer.phoneNo}}</td>
+                <td>{{customer.accounts.length}}</td>
+                <td>{{customer.totalBalance}}</td>
+                <div class="btn" *ngFor="let account of customer.accounts">
+                     <td><button class="button" routerLink ='/customers/account/{{account._id}}' (click)="getAccountDetails()">{{account.type}}</button><br>
+                </div>
+            </tr>
+        </tbody>
+    </table>
+
+</div><router-outlet></router-outlet>
+
+  
+
+
+

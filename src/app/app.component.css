@@ -1,0 +1,62 @@
+.content{
+    text-align: center; 
+    background-image:url(https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg);
+    height: 520px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(161, 139, 139);
+    
+  }
+ 
+  .topnav a {
+    float: left;
+    color: #030303;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: blue;
+    border: 1px solid black;
+  
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(231, 74, 74);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+
+  }
+
+  .row.content {height: 700px}
+  .sidenav {
+    background-color: #b8b9be;
+    height: 100%;
+    
+  }
+  a:hover{
+    background-color: rgb(231, 74, 74);
+    color: black;
+  }
+
+  .a {
+    float: left;
+    color: #030303;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: blue;
+    border: 1px solid black;
+  
+  }
+
+  .nav nav-pills nav-stackeda:hover {
+    background-color: rgb(231, 74, 74);
+    color: black;
+  }

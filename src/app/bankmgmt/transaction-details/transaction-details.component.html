@@ -1,0 +1,25 @@
+
+<div class="trans-container">
+    <h1>Transaction Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <td >Account No</td>
+                <td >Transaction ID</td>
+                <td>Transaction Type</td>
+                <td>Transaction Amount</td>
+                <td>Transaction Date</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let account of acc">
+            <tr *ngFor="let tr of trans">
+                <td>{{account._id}}</td>
+                <td >{{tr._id}}</td>
+                <td>{{tr.transactions_type}}</td>
+                <td>{{tr.amount}}</td>
+                <td>{{tr.transactionDate}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
